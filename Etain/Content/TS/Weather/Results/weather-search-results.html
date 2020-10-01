@@ -1,0 +1,23 @@
+﻿<alert-loading params="DisplayCondition: IsRetreieveSearchResults, Text: CustomMessages.RetrievingWeatherBreakdown"></alert-loading>
+
+<div class="mid-margin-top-10"
+     data-bind="ContentVisible: HasSearchResults">
+    <div class="row row-cols-3 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5">
+        <!-- ko foreach: { data: SearchResults, as: 'searchResult' } -->
+        <div class="col">
+            <div class="card mid-margin-bottom-10 mid-card-weather">
+                <div class="card-img-top mid-card-weather-icon">
+                    <div class="mid-card-weather-icon-alignment"
+                         data-bind="CustomIcon: IconClass, IconSize: 'fa-3x'"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"
+                        data-bind="text: Location"></h5>
+                    <div data-bind="text: Date"></div>
+                    <div data-bind="text: WeatherStateName"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>

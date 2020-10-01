@@ -1,0 +1,30 @@
+﻿<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="account-management-modal" aria-hidden="true"
+     data-backdrop="static" data-keyboard="false"
+     data-bind="ToggleModal: DisplayModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="account-management-modal"
+                    data-bind="text: ModalTitle"></h5>
+            </div>
+            <div class="modal-body">
+                <div data-bind="ContentVisible: IsLoginStep">
+                    <account-login></account-login>
+                </div>
+
+                <div data-bind="ContentVisible: IsRegistrationStep">
+                    <account-register></account-register>
+                </div>
+
+                <hr />
+
+                <div class="mid-margin-top-10">
+                    <button-primary-outline params="ClickEvent: ToggleWorkflowState.bind($component), Text: WorkflowStateButtonText, IsFullLength: true"></button-primary-outline>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button-dark-outline params="ClickEvent: CloseModal.bind($component), Text: CustomMessages.Close"></button-dark-outline>
+            </div>
+        </div>
+    </div>
+</div>

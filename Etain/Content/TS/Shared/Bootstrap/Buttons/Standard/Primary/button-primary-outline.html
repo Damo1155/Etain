@@ -1,0 +1,5 @@
+﻿<button type="button" class="btn btn-outline-primary"
+        data-bind="click: ClickEvent, disable: IsDisabled, ContentVisible: DisplayCondition, css: { 'btn-block': IsFullLength }">
+    <span data-bind="IconSpinner, DisplayCondition: DisplaySpinner"></span>
+    <span data-bind="text: Text, visible: !DisplaySpinner()"></span>
+</button>

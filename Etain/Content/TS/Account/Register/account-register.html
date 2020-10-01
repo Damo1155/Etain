@@ -1,0 +1,9 @@
+﻿<form data-bind="submit: ProcessRegistration, validationOptions: { insertMessages: false }">
+    <input-email params="Value: FormProperties.Email, Text: CustomMessages.Email, IsRequired: true"></input-email>
+    <input-password params="Value: FormProperties.Password , Text: CustomMessages.Password, IsRequired: true"></input-password>
+
+    <generic-error params="DisplayCondition: HasErrorOccurred"></generic-error>
+    <alert-danger params="Text: NonStandardErrorMessage, DisplayCondition: DisplayNonStandardError"></alert-danger>
+
+    <submit-action params="Text: CustomMessages.Register, IsDisabled: IsProcessingRegistration, DisplaySpinner: IsProcessingRegistration, IsFullLength: true"></submit-action>
+</form>

@@ -1,0 +1,25 @@
+﻿<div class="mid-margin-bottom-10"
+     data-bind="ContentVisible: DisplayNotLoggedInContainer">
+    <alert-primary params="Text: CustomMessages.NotLoggedIn"></alert-primary>
+    <button-primary-outline params="ClickEvent: ToggleLoginModal.bind($component), Text: CustomMessages.Login, IsFullLength: true"></button-primary-outline>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Search form
+    </div>
+    <form data-bind="submit: ValidateSearch">
+        <div class="card-body">
+            <select-two-single params="Value: FormProperties.Woeid, Text: CustomMessages.Location, Options: WoeidOptions, IsRequired: true, ValidationFields: ValidationFields"></select-two-single>
+        </div>
+        <div class="card-footer">
+            <button-danger-outline params="ClickEvent: ClearForm.bind($component), Text: CustomMessages.ResetForm, IsDisabled: IsRetreieveSearchResults"></button-danger-outline>
+
+            <div class="float-right">
+                <submit-action params="Text: CustomMessages.Search, IsDisabled: IsRetreieveSearchResults, DisplaySpinner: IsRetreieveSearchResults"></submit-action>
+            </div>
+        </div>
+    </form>
+</div>
+
+<account-base params="SignalConfiguration: SignalConfiguration"></account-base>

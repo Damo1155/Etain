@@ -1,0 +1,16 @@
+﻿@import "../Variables/colours";
+
+.mid-card-weather {
+    .card-img-top.mid-card-weather-icon {
+        height: 100px;
+        color: $mid-white;
+        background-color: $mid-weather-background-img-colour;
+
+        .mid-card-weather-icon-alignment {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}

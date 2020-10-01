@@ -1,0 +1,26 @@
+﻿$mid-primary: #0069D9;
+$mid-secondary: #5A6268;
+$mid-success: #218838;
+$mid-danger: #C82333;
+$mid-warning: #E0A800;
+$mid-info: #117A8B;
+
+$colors: () !default;
+$colors: map-merge( 
+    (
+        "mid-primary"   :   $mid-primary,
+        "mid-secondary" :   $mid-secondary,
+        "mid-success"   :   $mid-success,
+        "mid-danger"    :   $mid-danger,
+        "mid-warning"   :   $mid-warning,
+        "mid-info"      :   $mid-info
+    ), 
+    $colors 
+);
+
+$primary: $mid-primary;
+$secondary: $mid-secondary;
+$success: $mid-success;
+$danger: $mid-danger;
+$warning: $mid-warning;
+$info: $mid-info;

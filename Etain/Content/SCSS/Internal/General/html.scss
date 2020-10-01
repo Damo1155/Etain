@@ -1,0 +1,10 @@
+﻿@import "../Variables/colours";
+
+label {
+    cursor: pointer;
+
+    &.mid-required::after {
+        color: $mid-dark-red;
+        content: ' *';
+    }
+}

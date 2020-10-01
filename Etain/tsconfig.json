@@ -1,0 +1,28 @@
+{
+  "include": [
+    "Content/**/*.ts", "Content/JS/requireconfig.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false,
+    "target": "ES6",
+    "sourceMap": true,
+    "newLine": "crlf",
+    "removeComments": true,
+    "module": "AMD",
+    "baseUrl": ".",
+    "moduleResolution": "Node",
+    "lib": [
+      "ES6",
+      "DOM"
+    ],
+    "paths": {
+      //"MainContent/*": [ "Content/TS/*" ],
+      //"Models/*": [ "Content/TS/Models/*" ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+﻿<div class="form-group">
+    <label data-bind="text: Text, css: { 'mid-required': IsRequired }, UniqueIdentifier: Value"></label>
+    <input type="text" class="form-control"
+           data-bind="value: Value, AriaRequired: IsRequired, UniqueIdentifier: Value">
+</div>
+
+<validation-error params="Value: Value"></validation-error>

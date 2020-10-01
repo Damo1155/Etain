@@ -1,0 +1,10 @@
+﻿<div class="form-group no-margin-bottom">
+    <label id="select-two-single"
+           data-bind="text: Text, UniqueIdentifier: Value, css: { 'mid-required': IsRequired }"></label>
+    <div class="form-control">
+        <select id="select-two-single"
+                data-bind="SelectTwoSingle: Options, SelectedValue: Value, AriaRequired: IsRequired, UniqueIdentifier: Value"></select>
+    </div>
+</div>
+
+<validation-error params="Value: Value"></validation-error>

@@ -1,0 +1,22 @@
+﻿// Overrides - Should not be moved!
+@import "Overrides/Bootstrap/colours";
+
+// External Libraries
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/select2/src/scss/core";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+// Base Structure
+@import "Internal/BaseStructure/main-content";
+@import "Internal/BaseStructure/footer-content";
+
+// Overrides
+@import "Overrides/Bootstrap/alerts";
+@import "Overrides/SelectTwo/select-two-overrides";
+
+// General
+@import "Internal/General/html";
+@import "Internal/General/margins";
+
+// Custom
+@import "Internal/Custom/weather";

@@ -1,0 +1,25 @@
+﻿.alert {
+    margin-bottom: 0.625rem;
+    white-space: normal;
+
+    .mid-icon {
+        display: inline;
+        float: left;
+
+        svg {
+            font-size: 1.5em;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fa-spinner {
+            margin-top: -0.7rem;
+        }
+    }
+
+    .mid-text {
+        text-align: left;
+        margin: 0 0 0 4.125rem;
+    }
+}
